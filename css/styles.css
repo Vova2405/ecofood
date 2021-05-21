@@ -1,3 +1,17 @@
-a{
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(C:/Users/DELL/Desktop/ecofood/img/design/bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    background-color: white;
+    margin: 50px 10%;
+    max-width: 2400px;
+    padding: 10px 40px;
 }
