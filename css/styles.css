@@ -1,6 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -15,6 +24,43 @@ body{
     max-width: 2400px;
     padding: 10px 40px;
 }
+
+.button{
+    background-color: #91ac27;
+    border: none;
+    padding: 6px 12px;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.button:hover{
+    background-color: #629c16;
+    transition: all 0.5s;
+}
+
+.link{
+        color: black;
+    }
+
+.link:hover{
+        color: #91ac27;
+        transition: all 0.5s;
+    }
+
+    nav > a{
+        border-bottom: 2px solid transparent;
+        padding: 15px 5px;
+        transition: all 0.5s;
+    }
+nav > a:hover{
+        border-bottom: 2px solid green;
+        padding: 15px 5px;
+        transition: all 0.5s;
+    }
+
 .main{
     background-color: white;
     margin: 50px 10%;
