@@ -9,12 +9,6 @@ body{
     background-attachment: fixed;
 }
 
-.wrapper{
-    background-color: white;
-    margin: 50px 10%;
-    max-width: 2400px;
-    padding: 10px 40px;
-}
 .main{
     background-color: white;
     margin: 50px 10%;
