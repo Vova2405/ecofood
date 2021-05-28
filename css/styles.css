@@ -6,6 +6,9 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+h2{
+    width: 100%;
+}
 
 
 a{
@@ -31,18 +34,22 @@ body{
     padding: 6px 12px;
     color: white;
     transition: all 0.5s;
-    cursor: pointer;
     text-decoration: none;
+    text-align: center;
+    cursor: pointer;
     
 }
 
 .button:hover{
     background-color: #629c16;
     transition: all 0.5s;
+    text-decoration: none;
+    text-align: center;
 }
 
 .link{
         color: black;
+        margin: 10px 0;
     }
 
 .link:hover{
@@ -55,15 +62,51 @@ body{
         padding: 15px 5px;
         transition: all 0.5s;
     }
+
 nav > a:hover{
         border-bottom: 2px solid green;
         padding: 15px 5px;
         transition: all 0.5s;
     }
 
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
 .main{
     background-color: white;
     margin: 50px 10%;
     max-width: 2400px;
     padding: 10px 40px;
+    
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+header > section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header > a {
+    flex-grow: 4;
+}
+
+section{
+margin: 50px 0;
+}
+
+.products{
+display: flex;
+flex-wrap: wrap;
 }
