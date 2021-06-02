@@ -4,10 +4,22 @@
     
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
 }
 h2{
     width: 100%;
+    font-size: 0.825rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 50px 0 10px 0;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+html{
+    font-size: 16px;
 }
 
 
@@ -28,6 +40,7 @@ body{
     padding: 10px 40px;
 }
 
+
 .button{
     background-color: #91ac27;
     border: none;
@@ -40,49 +53,15 @@ body{
     
 }
 
+.button--wide{
+    width: 100%;
+}
+
 .button:hover{
     background-color: #629c16;
     transition: all 0.5s;
     text-decoration: none;
     text-align: center;
-}
-
-.link{
-        color: black;
-        margin: 10px 0;
-    }
-
-.link:hover{
-        color: #91ac27;
-        transition: all 0.5s;
-    }
-
-    nav > a{
-        border-bottom: 2px solid transparent;
-        padding: 15px 5px;
-        transition: all 0.5s;
-    }
-
-nav > a:hover{
-        border-bottom: 2px solid green;
-        padding: 15px 5px;
-        transition: all 0.5s;
-    }
-
-    nav{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 40px;
-    }
-
-
-.main{
-    background-color: white;
-    margin: 50px 10%;
-    max-width: 2400px;
-    padding: 10px 40px;
-    
 }
 
 header{
@@ -100,13 +79,112 @@ header > section{
 
 header > a {
     flex-grow: 4;
+    margin: 30px 0;
 }
 
-section{
-margin: 50px 0;
+.img-wrapper{
+    background-image: url(C:/Users/DELL/Desktop/ecofood/img/design/empty-bg.jpg);
 }
+
+.img-wrapper > form{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25%;
+    gap: 10px;
+}
+
+input[type="email"]{
+    padding: 4px;
+}
+
+.link{
+        color: black;
+        margin: 10px 0;
+    }
+
+.link:hover{
+        color: #91ac27;
+        transition: all 0.5s;
+    }
+
+    .my-15{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .main{
+        background-color: white;
+        margin: 50px 10%;
+        max-width: 2400px;
+        padding: 10px 40px;
+        
+    }
+    
+
+    nav > a{
+        border-bottom: 2px solid transparent;
+        padding: 15px 5px;
+        transition: all 0.5s;
+    }
+
+nav > a:hover{
+        border-bottom: 2px solid green;
+        padding: 15px 5px;
+        transition: all 0.5s;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 16px;
+        padding-left: 40;
+    }
 
 .products{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+
+}
+
+.products > article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.products > article > h3{
+    font-size: 1.75rem;
+    font-weight: 500
+}
+
+section{
+    margin: 50px 0;
+    }
+
+    .discount{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+.discount > span{
+    text-transform: uppercase;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer >section >article{
+    width: 30%;
 }
