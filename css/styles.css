@@ -20,6 +20,7 @@ h2 {
 h3{
     font-size: 1.75rem;
     font-weight: 500;
+    margin: 8px 0;
 }
 
 
@@ -31,6 +32,8 @@ body {
     background: url(C:/Users/DELL/Desktop/ecofood/img/design/bg.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
@@ -109,6 +112,10 @@ header > a {
     flex-grow: 4;
 }
 
+hr{
+    margin: 50px 0 0 0;
+}
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +166,7 @@ input[type="email"] {
 footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 footer > section {
@@ -167,15 +175,62 @@ footer > section {
     justify-content: center;
     gap: 20px;
     margin: 50px;
-    width: 1024px;
+    width: 100%;
 }
 
 footer > section > article {
    min-width: 100px;
-   max-width: 300px;
-   margin: 50px 100px;
+   margin: 20px;
+    width: 300px;
 }
 
 .footer-copy-right{
     text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.social-links > a{
+    color: white;
+    border: 10px solid black;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    background: black;
+    transition: all 0.5s;
+    margin: 50px 0;
+}
+
+.social-links > a:hover{
+    border: 10px solid #91ac27;
+    background-color: #91ac27;
+}
+
+@media only screen and (max-width:425px) {
+    body{
+        background: none;
+    }
+
+    .wrapper{
+        margin: 0;
+        padding: 5%;
+    }
+    
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > section{
+        width: 100%;
+        text-align: center;
+        flex-grow: 0;
+    }
+
+    header > a{
+        margin-bottom: 20px;
+        flex-grow: 0;
+    }
+    nav{
+        display: none;
+    }
 }
