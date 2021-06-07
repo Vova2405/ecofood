@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eco Food</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
@@ -21,11 +23,18 @@
                     <a href="#" class="link">Cart<i class="fas fa-shopping-basket"></i>(<span>0</span>)</a>
                     <button class="button">Clear cart</button>
                 </section>
-                <nav>
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link">Catalog</a>
-                    <a href="#" class="link">About us</a>
-                    <a href="#" class="link">Contact</a>
+                <nav id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                  <ul id="menu">
+                  <li><a href="#" class="link">Home</a></li>
+                  <li><a href="#" class="link">Catalog</a></li>
+                  <li><a href="#" class="link">About us</a></li>
+                  <li><a href="#" class="link">Contact</a></li>
+                  </ul>
                 </nav>
             </header>
             <main>
@@ -86,10 +95,9 @@
 			<button class="button">Add to cart</button>
 			</article>
 
-                        <button class="button button--wide">Add to cart</button>
                     </article>
                 </section>
-                <section>
+                <section class="guide">
                     <h2>Your personal sales guide...</h2>
                     <div class="img-wrapper">
                         <form action="#">
