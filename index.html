@@ -13,13 +13,17 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
             rel="stylesheet"
         />
+
+        <script defer src="js/loadProducts.js"></script>
+        <script defer src="js/jsButtons.js"></script>
+
     </head>
     <body>
         <div class="wrapper">
             <header>
                 <a href="#"><img src="img/design/logo.png" alt="logo" /></a>
                 <section>
-                    <a href="#" class="button">Login</a>
+                    <a href="#" id="button1" class="button">Log in</a>
                     <a href="#" class="link">Cart<i class="fas fa-shopping-basket"></i>(<span>0</span>)</a>
                     <button class="button">Clear cart</button>
                 </section>
@@ -44,58 +48,7 @@
                     <!-- carousel -->
                 </section>
                 <hr />
-                <section class="products">
-                    <h2>Most popular products</h2>
-                    <article id="1">
-				<img src="img/img/kiwi.jpg" alt="kiwi">
-				<h3>Kiwi</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="2">
-				<img src="img/img/lemon.jpg" alt="lemon">
-				<h3>Lemon</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="3">
-				<img src="img/img/cauliflower.jpg" alt="cauliflower">
-				<h3>Cauliflower</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="4">
-				<img src="img/img/corn.jpg" alt="corn">
-				<h3>Corn</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="5">
-				<img src="img/img/cucumber.jpg" alt="cucumber">
-				<h3>Cucumber</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="6">
-				<img src="img/img/lime.jpg" alt="lime">
-				<h3>Lime</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="7">
-				<img src="img/img/peach.jpg" alt="peach">
-				<h3>Peach</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-			<article id="8">
-				<img src="img/img/pumpkin.jpg" alt="pumpkin">
-				<h3>Pumpkin</h3>
-				<p>$7</p>
-			<button class="button">Add to cart</button>
-			</article>
-
-                    </article>
+                <section id="jsProducts" class="products">
                 </section>
                 <section class="guide">
                     <h2>Your personal sales guide...</h2>

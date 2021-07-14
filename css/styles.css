@@ -17,6 +17,12 @@ h2 {
     margin: 50px 0 10px 5%;
 }
 
+
+hr{
+    width: 100%;
+}
+
+
 h3{
     font-size: 1.75rem;
     font-weight: 500;
@@ -44,17 +50,23 @@ body {
 }
 
 .button {
-    background-color: #629c16;
+    background-color: #91ac27;
     border: none;
-    padding: 6px 12px;
+    padding: 10px 12px;
     color: white;
     transition: all 0.5s;
     text-align: center;
     cursor: pointer;
+    width: 100%;
 }
 
 .button--wide {
     width: 100%;
+}
+
+header > section >.link:hover{
+    color: #629c16;
+    transition: all 0.5s;
 }
 
 .button:hover {
@@ -109,11 +121,11 @@ header > section {
 }
 
 header > a {
-    flex-grow: 4;
+    flex-grow: 6;
 }
 
-hr{
-    margin: 50px 0 0 0;
+#button1{
+    width: auto;
 }
 
 .products {
@@ -129,8 +141,16 @@ hr{
     align-items: center;
 }
 
-.my-15 {
-    margin: 15px 0;
+
+
+#log-in > section >p{
+    margin: 30px 0;
+}
+
+#log-in > section > input{
+    width: 100%;
+    padding: 10px 12px;
+    max-width: -webkit-fill-available;
 }
 
 .products > article > h3 {
@@ -178,6 +198,10 @@ footer > section {
     width: 100%;
 }
 
+footer > hr{
+    margin: 30px 0 0 0 ;
+}
+
 footer > section > article {
    min-width: 100px;
    margin: 20px;
@@ -203,6 +227,59 @@ footer > section > article {
 .social-links > a:hover{
     border: 10px solid #91ac27;
     background-color: #91ac27;
+}
+
+main > .button{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.prod{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+    place-content: space-around;
+}
+
+.price{
+    align-self: center;
+}
+
+section > hr{
+    margin: 30px 0 ;
+}
+
+.h3{
+    text-transform: uppercase;
+}
+
+#menuToggle{
+    margin-bottom: 50px;
+}
+
+
+.price > p{
+    margin-bottom: 20px;
+}
+
+.big{
+    font-size: larger;
+}
+
+.price > button{
+    width: 100%;
+}
+ 
+#product-img{
+    margin: 30px;
+    transition: all 0.5s;
+}
+
+#product-img:hover{
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width:425px) {
@@ -237,5 +314,6 @@ footer > section > article {
 }
 
 .guide{
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
+
