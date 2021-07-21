@@ -60,6 +60,17 @@ body {
     width: 100%;
 }
 
+.button1{
+    background-color: #91ac27;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+}
+
 .button--wide {
     width: 100%;
 }
@@ -126,6 +137,7 @@ header > a {
 
 #button1{
     width: auto;
+    
 }
 
 .products {
@@ -317,3 +329,44 @@ section > hr{
     margin: 5% 5% 0 5%;
 }
 
+#jsProducts > article > img{
+    cursor: pointer;
+}
+
+#buttonTop {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: initial
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: initial
+}
+
+#buttonTop:active {
+    background-color: #555;
+    color: white;
+    border: initial
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+    border: initial
+}

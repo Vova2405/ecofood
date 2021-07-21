@@ -8,9 +8,10 @@ let products = '<h2>Most popular products</h2>';
 products += `<article id="${productsArr[i].id}">` + 
  `<img src="${productsArr[i].imgUrl}" alt="${productsArr[i].name}" class="jsProductImg"/>` +
  `<h3>${productsArr[i].name}</h3>` +
- `<p>$${productsArr[i].price.toFixed(2)}</p>` +
-`<button class="button">Add to cart</button>` +
+ `<p>$${productsArr[i].price}</p>` +
+`<button class="button js-Add-To-Cart">Add to cart</button>` +
 `</article>`;
 }
 
 document.getElementById('jsProducts').innerHTML = products
+console.log(productsArr)
